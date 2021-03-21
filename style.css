@@ -3,7 +3,7 @@ body{
 }
 .container{
     width: auto;
-    height: 650px;
+    height:800px;
     background-color: #7ea5aa;
 }
 .content{
@@ -28,7 +28,7 @@ body{
 }
 .inputfield{
     width: 540px;
-    height: 200px;
+    height: 240px;
     background-color: rgb(207, 221, 219); 
     margin:20px 20px 20px 0px;
     border-radius: 5px;
@@ -49,7 +49,7 @@ body{
     position: relative;
     left: 0;
     right: 0;
-    top:30px;
+     bottom: 15px;
     margin: auto;
 }
 #imdbid{
@@ -83,4 +83,55 @@ body{
      line-height: normal;
      position: relative;
      top: 18px;
+}
+
+.tab{
+    width: auto;
+    height: 45px;
+    background-color: blue;
+}
+.tab1{
+    width: 100%;
+    height: 45px;
+  float: left;
+    text-align: center;
+    display: block;
+    position: relative;
+    top:9px;
+    font-size: 20px;
+}
+.tab2{
+    width: 100%;
+    height: 45px;
+  float: right;
+    text-align: center;
+    display: block;
+    position: relative;
+    top:9px;
+    font-size: 20px;
+}
+.tab1p{
+    background-color: rgb(39, 88, 179);
+    width: 50%;
+    height: 45px;
+    display: block;
+    
+}
+.tab2p{
+    background-color: rgb(207, 221, 219); 
+    width: 50%;
+    height: 45px;
+     position: relative;
+    left:50%;
+   bottom: 45px;
+}
+.Anda{
+    text-decoration: none;
+    color:black
+}
+.novideo{
+    display: none;
+}
+.notframe{
+display: none;
 }
