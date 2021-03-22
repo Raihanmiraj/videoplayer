@@ -4,16 +4,20 @@ var imdbid=document.getElementById("imdbid");
  function useImdbID(x){
 x=1;
 y=x;
-
+document.querySelector(".tab2p").style.backgroundColor="blue";
+document.querySelector(".tab1p").style.backgroundColor="#cfdddb";
 var player = new Playerjs({id:"player", file:""});
 document.querySelector(".videoframe").classList.replace("videoframe","novideo");
+
  }
 function useLink(x){
     x=0;   
     y=x; 
-  
+    document.querySelector(".tab1p").style.backgroundColor="blue";
+    document.querySelector(".tab2p").style.backgroundColor="#cfdddb";
  document.querySelector(".yesframe").classList.replace("yesframe","notframe");
  document.getElementById("myFrameVideo").src="";
+
  }
 
 function ifChange(){
@@ -21,7 +25,6 @@ function ifChange(){
     if(imdbId!=null){
        playerJS(imdbId)
     }
-   
    }
  function playerJS(){
        console.log(y);
@@ -45,8 +48,8 @@ console.log(y);
        }
   }
 
-   document.querySelector(".tab1p").addEventListener("click", useLink);
-   document.querySelector(".tab2p").addEventListener("click", useImdbID);
+   document.querySelector(".tab1").addEventListener("click", useLink);
+   document.querySelector(".tab2").addEventListener("click", useImdbID);
 
    imdbid.addEventListener("change",ifChange);
 
