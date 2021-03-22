@@ -2,9 +2,14 @@ body{
     margin: auto;
 }
 .container{
-    width: auto;
-    height:800px;
-    background-color: #7ea5aa;
+    width: 540px;
+    height:540px;
+   background-color: #7ea5aa;
+    position: relative;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
 }
 .content{
     width: 540px;
